@@ -1,0 +1,25 @@
+.li-box {
+    display: flex;
+    background-color: wheat;
+    border-radius: 10px;
+    padding: 10px 0px 10px 20px;
+    gap: 10px;
+    align-items: center;
+    color: black;
+    font-size: 1.1rem;
+    margin: 10px 15px;
+}
+
+.li-box>span:hover {
+    color: red;
+}
+
+.li-item {
+    background-color: skyblue;
+}
+
+ol {
+    position: relative;
+    top: 20px;
+    padding-bottom: 20px;
+}

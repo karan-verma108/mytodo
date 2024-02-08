@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 238, 238);
+    font-family: 'Protest Riot', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box {
+    width: 22%;
+    /* height: 60vh; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.796);
+    color: white;
+    padding: 20px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+    background-color: white !important;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+    background-color: skyblue !important;
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ol li {
+    list-style: none;
+}
+
+.inp-field {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px 15px 0px 15px;
+}
+
+.inp-field input {
+    padding: 7px 0px 7px 22px;
+    font-size: 1.1rem;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+@media screen and (max-width: 1492px) {
+    .inp-field {
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 1402px) {
+    .box {
+        width: 33%;
+    }
+
+    .inp-field {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:940px) {
+    .box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:632px) {
+    .box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:442px) {
+    .box {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:364px) {
+    .inp-field {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .inp-field input {
+        text-align: center;
+        padding: 7px 0px 7px 0px;
+    }
+}
+
+@media screen and (max-width:263px) {
+    .inp-field input {
+        width: 100px;
+    }
 }
